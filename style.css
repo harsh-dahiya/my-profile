@@ -43,23 +43,32 @@ header h1 {
     transform: scale(1.1);  /* Slight zoom effect on hover for a more dynamic feel */
 }
 
-/* Introduction Text */
-.intro-text {
-    color: #333;
+/* Introduction Section */
+.intro-section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Bio Box with Justified Text */
+.bio-box {
+    background-color: white;  /* Clean white background */
+    border: 2px solid #D4AF37;  /* Gold border for premium feel */
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    text-align: justify;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Light luxury shadow */
     font-size: 1.2em;
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 300;
-    font-family: 'Georgia', serif;  /* Elegant serif font for introduction */
+    color: #555;
+    line-height: 1.6;
 }
 
-#bio {
-    text-align: center;
-    font-style: italic;
-    font-size: 1.1em;
-    color: #777;
+.bio-box:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced hover effect */
 }
 
+/* Button */
 .connect-btn {
     display: block;
     margin: 30px auto;
@@ -155,4 +164,20 @@ footer h2 {
 .portfolio-box, .testimonials-box {
     background-color: white;
     padding: 30px;
-    b
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio-box:hover, .testimonials-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonials Styling */
+.testimonial {
+    font-style: italic;
+    color: #555;
+    font-size: 1.1em;
+}
